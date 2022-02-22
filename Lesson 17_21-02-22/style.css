@@ -148,7 +148,9 @@ nav ul li a{
     text-align: center;
 }
 .features{
-    flex-basis: 50%;
+    flex-basis: 60%;
+    margin-left: 23%;
+    hyphens: auto;
 }
 .features-img{
     flex-basis: 50%;
@@ -159,7 +161,7 @@ nav ul li a{
     border-radius: 10px;
 }
 .features h1{
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
     font-weight: 100;
     color: #000000;
@@ -215,12 +217,12 @@ nav ul li a{
     top: -32px;     /*layer img hover*/
     border-radius: 7px;
     cursor:pointer;
-    background: linear-gradient(transparent,#f2e4f8);
+    background: linear-gradient(#f2e4f8,#edd9f5,transparent);
     opacity: 0;
     transition: 1s;
 }
 .single-service:hover .overlay{
-    opacity: 1;
+    opacity: .9;
 }
 .service-desc{
     width: 80%;
@@ -239,7 +241,7 @@ hr {
     width: 60%;
 }
 .service-desc{
-    font-size: 14px;
+    font-size: 20px;
 }
 .single-service:hover .service-desc{
     bottom: 40%;
@@ -321,7 +323,7 @@ hr {
     line-height: 35px;
 }
 .footer-img{
-    max-width: 270px;
+    max-width: 250px;
     opacity: 0.3;
     position: absolute;
     right: 0;
