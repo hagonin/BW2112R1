@@ -107,10 +107,11 @@ nav ul li a{
 #features{
     width: 100%;
     padding: 70px 0;
+    position: relative;
 }
 .title-text{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 70px;
     color:rgb(94, 40, 94);
 }
@@ -119,8 +120,8 @@ nav ul li a{
     font-size: 20px;
     color: rgb(94, 40, 94);
     font-weight: bold;
-    position: relative;
     z-index: 1;
+    position: relative;
     display: inline-block;
 }
 .title-text p::after{
@@ -148,20 +149,18 @@ nav ul li a{
     text-align: center;
 }
 .features{
-    flex-basis: 60%;
-    margin-left: 23%;
-    hyphens: auto;
+    flex-basis: 50%;
 }
-.features-img{
+.feature-img{
     flex-basis: 50%;
     margin: auto;
 }
 .feature-img img{
-    width: 70%;
+    width: 90%;
     border-radius: 10px;
 }
 .features h1{
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
     font-weight: 100;
     color: #000000;
@@ -181,12 +180,46 @@ nav ul li a{
 }
 .feature-text p{
     text-align: initial;
+    line-height: 1.5em;
     padding: 0 20px
 }
+#video-fullscreen{
+    width: 100%;
+    position: relative;
+}
+.video-container{
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    top: 400px;
+    left:0;
+    object-fit: cover;
+}
+/* .text-content{
+    position: absolute;
+    bottom: 70%;
+    left: 70%;
+    color: black;
+    width: 30%;
+    z-index: 11;
+    padding: 20px;
+    background-color:rgb(251,234,255);
+    border-radius: 7px;
+    font-family: 'Rubik', sans-serif;
+    font-size:.7em;
+}
+.text-content h3{
+    text-align: center;
+    margin: 30px;
+}
+.text-content p{
+    font-weight: 300;
+} */
             /*SERVICES*/
 #service{
     width: 100%;
     padding: 50px 0;
+    margin-top:100px;
     background: #e7e7e7;
 }
 .service-box{
@@ -261,7 +294,7 @@ hr {
     flex-wrap: wrap;
 }
 .testimonial-col{
-    flex-basis:28%;
+    flex-basis:23%;
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
@@ -290,7 +323,7 @@ hr {
     color: #000000;
 }
 .testimonial-col:hover{
-    transform: translateY(7px);
+    transform:rotate(5deg);
 }
         /* FOOTER */
 #footer{
@@ -354,4 +387,7 @@ hr {
     font-size: 20px;
     color: #000000;
     margin: 10px;
+}
+@media screen and (max-width: 1000px){
+
 }
