@@ -10,11 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <title>Newsletter</title>
     <style>
-        .subscription.bg-white .subscription-wrapper {
-            background: rgb(243, 213, 213)
-        }
-
-        .subscription-wrapper {
+        .subscription-wrapper, .subscription-wrapper-color{
             border-radius: 30px;
             padding: 70px 50px;
             z-index: 1;
@@ -23,6 +19,12 @@
             position: absolute;
             top: 100px
         }
+        .subscription-wrapper-color {   
+            background: linear-gradient(80deg, #66e041 0%, #46da90 100%);         
+            position: absolute;
+            left: 110%;
+            top:100px;
+        }
 
         h3,
         .h3 {
@@ -30,20 +32,20 @@
         }
 
         .flex-fill {
-            flex: 1 1 auto
+            flex: 1 1 auto !important
         }
 
-        .subscription.bg-white .form-control {
-            border: 1px solid #ebebeb !important
+        .form-control {
+            border: 1px solid #ccbebe !important
         }
 
-        .subscription-wrapper .form-control {
+        .form-control {
             height: 60px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(226, 23, 23, 0.1);
             border-radius: 45px
         }
 
-        .subscription-wrapper .form-control:focus {
+        .form-control:focus {
             background: rgba(255, 255, 255, 0.1);
             outline: 0;
         }
@@ -77,30 +79,58 @@
             background: linear-gradient(45deg, #00a8f4 0%, #02d1a1 100%);
             z-index: -1;
             transition: ease 0.3s
+        } 
+        .btn-2:after{
+            background: linear-gradient(90deg, #e772d4 0%, #ebc9ce 100%);
         }
     </style>
 </head>
 
 <body>
-    <section class="subscription bg-white">
+    <section>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row ">
+                <div class="col-lg-6 bg-warning">
                     <div class="subscription-wrapper">
                         <div
-                            class="d-flex subscription-content justify-content-between align-items-center flex-column flex-md-row text-center text-md-left">
+                            class="d-inline-flex justify-content-between align-items-center flex-column flex-md-row text-center text-md-left">
                             <h3 class="flex-fill">Subscribe <br> to our newsletter</h3>
                             <form action="#" class="row flex-fill">
-                                <div class="col-lg-7 my-md-2 my-2">
+                                <div class="col-lg-12 my-md-2 my-2">
                                     <input type="email"
                                         class="form-control px-4 border-0 w-100 text-center text-md-left" 
                                         placeholder="Your Email" name="email">
                                 </div>
-                                <div class="col-lg-5 my-md-2 my-2">
+                                <div class="col-auto my-md-2 my-2">
                                     <button type="submit" class="btn btn-primary btn-lg border-0 w-100">Subscribe
                                         Now
                                     </button>
                                 </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 bg-success">
+                    <div class="subscription-wrapper-color">
+                        <div
+                            class="d-flex justify-content-between align-items-center flex-column flex-md-row text-center text-md-left">
+                            <h3 class="flex-fill">Subscribe <br> to our newsletter</h3>
+                            <form action="#" class="row flex-fill">
+                                <div class="col-lg-12 my-md-2 my-2">
+                                    <input type="email"
+                                        class="form-control px-4 border-0 w-100 text-center text-md-left" 
+                                        placeholder="Your Email" name="email">
+                                </div>
+                                <div class="col-auto my-md-2 my-2">
+                                    <button type="submit" class="btn btn-primary btn-lg border-0 w-100 btn-2">Subscribe Now
+                                    </button>
+                                </div> 
                             </form>
                         </div>
                     </div>
